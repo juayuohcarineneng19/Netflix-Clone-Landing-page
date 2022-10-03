@@ -54,9 +54,109 @@ button{
     color: #e50914;
     background-color: var(--primary-color);
     line-height: normal;
-    /* padding: 0.7rem 1.7rem; */
-    /* font-weight: 700; */
+    padding: 0.7rem 1.7rem;
+    font-weight: 700;
     font-size: 1.5rem;
     border-radius: 0.3rem;
     text-transform: capitalize;
+}
+
+/* banner Section */
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 5;
+}
+.bannerOverlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8)0,
+        rgba(0,0,0,0.4)40%,
+        rgba(0,0,0,0.4)75%,
+        rgba(0,0,0,0.8)100%,
+    );
+    z-index: 10;
+}
+.bannerContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 15;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 0rem 5rem;
+}
+.bannerTitle{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.bannerSubtitle{
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+/* form */
+.membershipForm{
+    display: grid;
+    position: relative;
+}
+.membershipInputContainer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.membershipInput{
+     flex-basis: 100%;
+     padding: 1rem;
+     padding-top: 2rem;
+     padding-bottom: 1.5rem;
+     border: none;
+     font-size: 1.6rem;
+}
+.membershipInput:focus{
+    outline: none;
+}
+.membershipBtn{
+    justify-content: center;
+    width: 100%;
+    max-width: 20rem;
+    padding: 1.5rem 3rem;
+}
+.membershipInputMessage{
+    flex-basis: 100%;
+    text-align: start;
+    margin: 1rem 0;
+    color: #ffa00a;
+    font-size: 1.5rem;
+    content: '';
+}
+.membershipPlaceholder{
+    position: absolute;
+    color: #8c8c8c;
+    top: 50%;
+    left: 1rem;
+    z-index: 10;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+
+}
+.membershipInputContainer.onFocus.membershipPlaceholder{
+    top: 1rem;
+    font-size: 1.2rem;
+}
+.form{
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    font-weight: 600;
 }
