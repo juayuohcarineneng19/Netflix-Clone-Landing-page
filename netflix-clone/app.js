@@ -35,6 +35,9 @@ const handleSubmit = (e) => {
     } else{
         membershipInputMessage.innerText = 'Enter a valid Email'
     }
+    setTimeout(() => {
+     membershipInputMessage.innerText = ''
+    }, 3000);
 }
 
 membershipInput.addEventListener(FOCUS_IN, handleFocus)

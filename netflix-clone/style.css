@@ -149,6 +149,7 @@ button{
     z-index: 10;
     transform: translateY(-50%);
     font-size: 1.4rem;
+    transition: all 0.3s ease-in-out;
 
 }
 .membershipInputContainer.onFocus.membershipPlaceholder{
@@ -159,4 +160,8 @@ button{
     font-size: 1.6rem;
     margin: 1rem 0;
     font-weight: 600;
+}
+/* section dvider */
+.section_divider{
+    border: 6px solid #222;
 }
