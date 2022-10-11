@@ -165,3 +165,24 @@ button{
 .section_divider{
     border: 6px solid #222;
 }
+
+/* Story card*/
+.story_card{
+    padding: 5rem 5%;
+    display: grid;
+    grid-row-gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.story_card_left{
+    text-align: center;
+}
+.story_card_left h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.story_card_left h2{
+    font-size: 2rem;
+    font-weight: 600;
+    position:absolute;
+}
