@@ -253,3 +253,60 @@ button{
 .kids_img{
     width: 100%;
 }
+/* FAQs */
+.faq{
+    padding: 7rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 80%;
+}
+.faq_title{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+.accortion_list{
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-row-gap: 1rem;
+    font-size: 2rem;
+}
+.accortion{
+    --accortion-padding:1.8rem;
+    --accortion-right-padding:6rem;
+}
+.accortion_question{
+    background-color: #303030;
+    display: block; 
+    width: 100%; 
+    text-align: left;
+    padding: var(--accortion-padding);
+    padding-right: var(--accortion-right-padding);
+    margin-bottom: 1px;
+    font-size: inherit;
+    position: relative;
+    cursor: pointer;
+}
+.accortion_question:after{
+    content: '+';
+    display: grid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    place-items: items;
+    height: 100%;
+    width: var(--accortion-right-padding);
+    text-align: center;
+    font-size: 3rem;
+}
+.accortion.active.accortion_question:after{
+     content: '-';
+}
+.accortion_answer{
+    background-color: #303030;
+    padding: var(--accortion-padding);
+    display: none;
+}
+
