@@ -4,6 +4,9 @@ const membershipInputContainer = document.querySelector('.membershipInputContain
 const membershipInputLabel= document.querySelector('.membershipPlaceholder')
 const membershipInputMessage = document.querySelector('.membershipInputMessage')
 
+const accordionQuestionEls = document.querySelectorAll('.accordion_question')
+
+
 const ON_FOCUS = 'onFocus'
 const FOCUS_IN = 'focusin'
 
@@ -43,3 +46,10 @@ const handleSubmit = (e) => {
 membershipInput.addEventListener(FOCUS_IN, handleFocus)
 membershipInput.addEventListener('focusout', handleFocus)
 membershipInput.addEventListener(submit, handleSubmit)
+accordionQuestionEls.forEach(element =>{
+    const handler = (e) => {
+      const parent = e.target.parentElement 
+      parent.classList.toggle('active')
+    }
+    element.addEventListener('click', handler)
+})
