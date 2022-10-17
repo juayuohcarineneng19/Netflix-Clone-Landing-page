@@ -248,5 +248,8 @@ button{
     color: #0071eb;
 }
 .download_animation_container .text_container{
-    /* padding-left: 2rem; */
+    padding-left: 2rem;
+}
+.kids_img{
+    width: 100%;
 }
