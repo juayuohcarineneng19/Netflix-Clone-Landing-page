@@ -93,7 +93,7 @@ button{
     z-index: 15;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     text-align: center;
     padding: 0rem 5rem;
 }
@@ -201,6 +201,7 @@ button{
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 10;
 }
 .tv_anime{
     position: absolute;
@@ -301,15 +302,93 @@ button{
     text-align: center;
     font-size: 3rem;
 }
-.accordion.active.accordion_question:after{
+.accordion.active .accordion_question:after{
      content: '-';
 }
-.accordion_answers{
+.accordion_answer{
     background-color: #303030;
     padding: var(--accordion-padding);
     display: none;
 }
-.accordion.active.accordion_answers{
+.accordion.active .accordion_answer{
     display: block;
 }
 
+
+/* footer */
+.footer{
+    padding: 8rem 6rem 4rem;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.footer__link__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 2rem;
+}
+.footer__link{
+    font-size: 1.3rem;
+    color: #757575;
+    text-transform: capitalize;
+}
+.footer__link:hover{
+    text-decoration: underline;
+}
+.footer__link.contact--link{
+    display: inline-block;
+    margin: 3rem 0;
+}
+
+
+
+
+/* responsivenes for larger screens */
+@media screen and (min-width:600px) {
+    .membershipBtn{
+        font-size: 2rem;
+    }
+    .story_card_left h1{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    .story_card_left h2{
+        font-size: 2.2rem;
+    }
+    .tv_anime_container{
+        width: 50rem;
+        height: 38rem;
+    }
+    .tv_anime{
+        top: 3.5rem;
+        left: 6.6rem;
+        width: 37rem;
+        height: 29.5rem;
+    }
+    .faq_title{
+        font-size: 3.5rem;
+    }
+    .footer__link__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer__link{
+        font-size: 1.5rem;
+    }
+} 
+
+/*  */
+@media screen and (min-width:900px) {
+    .bannerTitle{
+        font-size: 5rem;
+    }
+    .bannerSubtitle{
+            font-size: 3rem;
+    }
+    .membershipForm{
+        grid-template-columns: 70% 1fr;
+    }
+    .membershipInputMessage{
+            grid-row: 2;
+
+    }
+}

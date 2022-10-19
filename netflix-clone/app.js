@@ -46,6 +46,7 @@ const handleSubmit = (e) => {
 membershipInput.addEventListener(FOCUS_IN, handleFocus)
 membershipInput.addEventListener('focusout', handleFocus)
 membershipInput.addEventListener(submit, handleSubmit)
+ 
 accordionQuestionEls.forEach(element =>{
     const handler = (e) => {
       const parent = e.target.parentElement 
