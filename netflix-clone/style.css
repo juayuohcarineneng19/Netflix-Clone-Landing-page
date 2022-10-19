@@ -389,6 +389,29 @@ button{
     }
     .membershipInputMessage{
             grid-row: 2;
+    }
+    .membershipBtn{
+        justify-self: start;
+    }
+    .story_card{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .story_card_left{
+        text-align: left;
+    }
+    .accordion_list{
+        font-size: 3rem;
+    }
+}
 
+/*  */
+
+@media screen and (min-width:1200px){
+    .story_card_left h1{
+        font-size: 5rem;
+    }
+    .story_card_left h2{
+        font-size: 2.5rem;
     }
 }
